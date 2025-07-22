@@ -1,0 +1,11 @@
+@model WebApp.DAL.Entities.Order
+
+<h2>Детали заказа</h2>
+<div class="card">
+    <div class="card-body">
+        <p><strong>Пользователь:</strong> @Model.User.FullName</p>
+        <p><strong>Цена:</strong> @Model.Price.ToString("C")</p>
+        <p><strong>Дата:</strong> @Model.Date.ToShortDateString()</p>
+    </div>
+</div>
+<a href="/Order/Index" class="btn btn-secondary">Назад</a>

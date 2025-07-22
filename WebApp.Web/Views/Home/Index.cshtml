@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "CRM System";
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com "></script>
+    <!-- Настройка шрифтов -->
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    sans: ['"Open Sans"', 'sans-serif'],
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">CRM - System <span class="font-normal text-sm">vol 1.1</span></h1>
+            <nav class="space-x-4 hidden md:flex">
+                <a href="#" class="hover:underline font-medium">Главная</a>
+                <a href="/User/Index" class="hover:underline">Пользователи</a>
+                <a href="/Order/Index" class="hover:underline">Заказы</a>
+                <a href="#" class="hover:underline">Настройки</a>
+            </nav>
+            <div>
+                <button class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded transition">
+                    Выйти
+                </button>
+            </div>
+        </div>
+    </header>
+
+    
+    <main class="container mx-auto p-6">
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+                <h2 class="text-lg font-semibold mb-2">Пользователи</h2>
+                <p class="text-gray-600 mb-4">Управление учетными записями пользователей</p>
+                <a href="/User/Index" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition">
+                    Управление пользователями
+                </a>
+            </div>
+
+            
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+                <h2 class="text-lg font-semibold mb-2">Заказы</h2>
+                <p class="text-gray-600 mb-4">Отслеживание и управление заказами клиентов</p>
+                <a href="/Order/Index" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition">
+                    Управление заказами
+                </a>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="bg-gray-200 text-center text-gray-600 py-4 mt-10">
+        <p>© 2023 CRM System vol 1.1 </p>
+    </footer>
+
+</body>
+</html>
