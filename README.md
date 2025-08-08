@@ -28,15 +28,15 @@ A complete CRM system built with ASP.NET Core MVC, featuring a three-tier archit
 
 ## Prerequisites:
 
-.NET 9.0 SDK or higher
+- .NET 9.0 SDK or higher
 
-SQL Server Express (LocalDB) or PostgreSQL
+- SQL Server Express (LocalDB) or PostgreSQL
 
-Visual Studio
+- Visual Studio
 
-2022 (optional) or VS Code
+- 2022 (optional) or VS Code
 
-Node.js (for Tailwind CSS)
+- Node.js (for Tailwind CSS)
 
 # Quick Start:
 
